@@ -1,0 +1,33 @@
+<head>
+  <title>My First Webpage!</title>
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <style>
+    body{
+      background-color: #87CEEB;
+    }
+    h1{
+      background-color: #FF0000;color: #FFFFFF;
+    }
+    h2{
+      background-color: #2F4F4F;color: #FFFFFF;
+    }
+    p{
+      background-color: #f8f8ff; color: #FFFFFF;
+    }
+  </style>
+</head>
+h1{
+  color: blue;
+  text-align: center;
+}
+h2{
+  color: green;
+  font-style: italic;
+  text-align: center;
+}
+p{
+  font-family: sans-serif;
+}
+ul{
+  line-height: 40px;
+}
