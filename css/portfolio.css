@@ -20,20 +20,20 @@ body {
 
 h1 {
   background-color: #FF0000;
-  color: #FFFFFF;
+  color: #060801;
   text-align: center;
 }
 
 h2 {
   background-color: #2F4F4F;
-  color: #FFFFFF;
+  color: #060801;
   font-style: oblique;
   text-align: center;
 }
 
 p {
   background-color: #f8f8ff;
-  color: #FFFFFF;
+  color: #060801;
   font-family: sans-serif;
 }
 
