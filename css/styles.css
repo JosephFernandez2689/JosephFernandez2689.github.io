@@ -1,22 +1,43 @@
 <link href="css/styles.css" rel="stylesheet" type="text/css">
 <style>
-    body{
-      background-color: #87CEEB; margin-top: 25px; font-size: 21px; text-align: center;
-    }
-    @-webkit-keyframes fadein {
-      from { opacity: 0; }
-      to   { opacity: 1; }
-    }
-    h1{
-      background-color: #FF0000;color: #FFFFFF; text-align: center;
-    }
-    h2{
-      background-color: #2F4F4F;color: #FFFFFF; font-style: oblique; text-align: center;
-    }
-    p{
-      background-color: #f8f8ff; color: #FFFFFF; font-family: sans-serif;
-    }
-    ul{
-      line-height: 40px;
-    }
+#test body {
+  background-color: #87CEEB;
+  margin-top: 25px;
+  font-size: 21px;
+  text-align: center;
+  animation: fadein 2s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+h1 {
+  background-color: #FF0000;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+h2 {
+  background-color: #2F4F4F;
+  color: #FFFFFF;
+  font-style: oblique;
+  text-align: center;
+}
+
+p {
+  background-color: #f8f8ff;
+  color: #FFFFFF;
+  font-family: sans-serif;
+}
+
+ul {
+  line-height: 40px;
+}
+
 </style>
