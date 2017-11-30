@@ -1,0 +1,162 @@
+/* code for even and odd problems */
+var number = 7;
+
+if (number % 2 === 0) {
+  console.log("even");
+} else {
+  console.log("odd");
+}
+
+/*code for groups */
+var musicians = 15;
+
+if (musicians === 0) {
+  console.log("not a group");
+} else if (musicians === 1) {
+  console.log("solo");
+} else if (musicians === 2) {
+  console.log("duet");
+} else if (musicians === 3) {
+  console.log("trio");
+} else if (musicians === 4) {
+  console.log("quartet");
+} else {
+  console.log("this is a large group");
+}
+
+/*code for Mystery*/
+
+var room = "dining room";
+var suspect = "Mr. Parkes";
+
+var weapon = "";
+var solved = false;
+
+if (room === "dining room" && suspect === "Mr. Parkes") {
+  solved = true;
+  weapon = "knife";
+} else if (room === "gallery" && suspect === "Ms. Van Cleve") {
+  solved = true;
+  weapon = "trophy";
+} else if (room === "billiards room" && suspect === "Mrs. Sparr") {
+  solved = true;
+  weapon = "pool stick";
+} else if (room === "ballroom" && suspect === "Mr. Kalehoff") {
+  solved = true;
+  weapon = "poison";
+} else {
+  console.log("Have no idea who have done it")
+}
+if (solved) {
+  console.log(suspect + " did it in the " + room + " with the " + weapon + "!");
+}
+
+/* code for bank*/
+var balance = -325.00;
+var checkBalance = true;
+var isActive = false;
+
+/*code for choice*/
+// your code goes here
+if (balance >= 0 && checkBalance === true) {
+  isActive = true;
+  console.log("Your balance is$ " + balance.toFixed(2) + ".");
+} else if (balance < 0 && checkBalance === true && isActive === false) {
+  console.log("Your account is negative. Please contact the bank.");
+} else {
+  console.log("Thank you!, Have a nice day.");
+}
+
+var flavor = "vanilla";
+var vessel = "cone";
+var toppings = "sprinkles";
+
+// Add your code here
+if ((flavor === "vanilla" || flavor === "chocolate") && (vessel === "cone" || vessel === "bowl") && (toppings === "sprinkles" || toppings === "peanuts")) {
+  console.log("I'd like two scoops of " + flavor + " ice cream in a " + vessel + " with " + toppings + ".");
+}
+
+var shirtWidth = 24;
+var shirtLength = 32;
+var shirtSleeve = 9.60;
+
+/*code for choices*/
+// your code goes here
+if ((shirtWidth === 18 || shirtWidth === 19) && (shirtLength === 28) && (shirtSleeve <= 8.37)) {
+  console.log("S");
+} else if ((shirtWidth === 20 || shirtWidth === 21) && (shirtLength === 29) && (shirtSleeve <= 8.62)) {
+  console.log("M");
+} else if ((shirtWidth === 22 || shirtWidth === 23) && (shirtLength === 30) && (shirtSleeve <= 8.87)) {
+  console.log("L");
+} else if ((shirtWidth === 24 || shirtWidth === 25) && (shirtLength === 31 || shirtLength === 32) && (shirtSleeve <= 9.62)) {
+  console.log("XL");
+} else if ((shirtWidth === 26 || shirtWidth === 27) && (shirtLength === 33) && (shirtSleeve <= 10.12)) {
+  console.log("2XL");
+} else {
+  console.log("3XL");
+}
+
+/*ternary operator*/
+* Use a series of ternary operator to set the category to one of the following:
+  *
+  -"herbivore"
+if an animal eats plants
+  *
+  -"carnivore"
+if an animal eats animals
+  *
+  -"omnivore"
+if an animal eats plants and animals
+  *
+  -undefined
+if an animal doesn 't eat plants or animals *
+  *
+  Notes *
+  -use the variables `eatsPlants`
+and `eatsAnimals` in your ternary expressions *
+  -`if`
+statements aren 't allowed ;-) *
+  /
+
+// change the values of `eatsPlants` and `eatsAnimals` to test your code
+var eatsPlants = false;
+var eatsAnimals = true;
+
+var category = eatsPlants && eatsAnimals ? "omnivore" : eatsPlants ? "herbivore" : eatsAnimals ? "carnivore" : "undefined";
+
+console.log(category);
+
+/*switch state,emt amd falling through*/
+// change the value of `education` to test your code
+var education = "an Associate's degree";
+
+// set the value of this based on a person's education
+var salary;
+
+// your code goes here
+switch (education) {
+  case "no high school diploma":
+    salary = 25636;
+    break;
+  case "a high school diploma":
+    salary = 35256;
+    break;
+  case "an Associate's degree":
+    salary = 41496;
+    break; /*ternary operator*/
+  case "a Bachelor's degree":
+    salary = 59124;
+    break;
+  case "a Master's degree":
+    salary = 69732;
+    break;
+  case "a Professional degree":
+    salary = 89960;
+    break;
+  case "a Doctoral degree":
+    salary = 84396;
+    break;
+}
+
+
+console.log("In 2015, a person with " + education + " earned an average of $" + salary.toLocaleString("en-US") + "/year.");
